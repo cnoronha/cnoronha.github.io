@@ -5,3 +5,8 @@
     font-family: "Roboto";
     src: '../fonts/Roboto/Roboto-Regular.ttf';
 }
+
+@font-face{
+    font-family: "Merriweather";
+    src: '../fonts/Merriweather/Merriweather-Italic.ttf';
+}

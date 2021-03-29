@@ -6,7 +6,8 @@
 /* css variables */
 @import url(./partials/variables.css);
 
-
+/* Global */
+@import url(./partials/_global.css);
 
 
 /* Start navigation */
@@ -20,7 +21,7 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 18px/2px var(--roboto);
+    font: normal 500 18px/2px var(--merriweather);
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -41,3 +42,42 @@
 }
 
 /* End navigation */
+
+
+/*  Start Banner Area  */
+
+.site-main .site-banner .site-title h3{
+    font-size: 2.5rem;
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 15vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 2rem 0rem;
+    width: 45rem;
+    transform: translateY(100px);
+}
+
+
+
+
+
+/*  End Banner Area  */
