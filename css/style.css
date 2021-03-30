@@ -10,6 +10,11 @@
 @import url(./partials/_global.css);
 
 
+/* Universal Font*/
+*{
+    font-family: helvetica;
+}
+
 /* Start navigation */
 
 .header_area.main-menu.navbar.navbar-brand{
@@ -20,22 +25,27 @@
     padding: 1rem 20rem ;
 }
 
-.header_area .main-menu .navbar .navbar-nav.nav-item .nav-link{
-    font: normal 500 18px/2px var(--roboto);
+.header_area .main-menu .navbar .navbar-brand{
+    font: normal 500 25px/2px var(--merriweather);
+    color: whitesmoke;
+}
+
+.header_area .main-menu .navbar .navbar-nav .nav-item .nav-link{
+    font: normal 500 18px/2px var(--merriweather);
     text-transform: uppercase;
     padding: 1.7rem;
-    color: var(--title-color);
+    color: whitesmoke;
 }
 
 .header_area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
+    background: var(--gradient-color-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
+    background: var(--gradient-color-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -46,7 +56,8 @@
 
 /*  Start Banner Area  */
 
-.site-main .site-banner .site-title h3{
+.site-main .site-banner .site-title h3.title-text{
+    font: var(--roboto);
     font-size: 2.5rem;
     padding-top: 35%;
     font-weight: 500;
@@ -63,7 +74,7 @@
 }
 
 .site-main .site-banner .site-title h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .site-main .site-banner .site-title h4{
@@ -92,13 +103,13 @@
     transform: translateY(35px);
 }
 
-.site-main .about-area .about-title h2{
-    display: block;
-    
-    letter-spacing: 10px;
+.site-main .about-area .about-title h3{
+    font-size: 3rem;
 }
 
-.site-main.about-area.about-title.paragraph>p{
+.site-main .about-area .about-title .paragraph>p{
+    font-size: 1.2rem;
+    color: black;
     padding: 0.4rem 0;
 }
 

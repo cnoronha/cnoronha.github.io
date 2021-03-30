@@ -4,7 +4,8 @@
 /* if the viewport is equal to 340px or less than that */ 
 @media only screen and (max-width: 340px){
     .header_area .main-menu .navbar,
-    .header_area .main-menu .navbar .navbar-brand{
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .about-area .about-image{
         padding: 2%;
         margin: 0%;
     }
