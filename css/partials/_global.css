@@ -30,7 +30,7 @@
 .button.primary-button:hover{
     background: var(--gradient-color);
     background-clip: padding-box;
-    color: whitesmoke;
+    color: red;
 }
 
 .button.primary-button::after{
