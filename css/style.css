@@ -87,6 +87,36 @@
     transform: translateY(100px);
 }
 
+.button{
+    padding: 0.8rem 2.2rem;
+    font: normal 900 16px/20px;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+}
+
+.button.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: " ";
+    z-index: -1;
+    border-radius: 4px;
+}
 
 /*  End Banner Area  */
 
