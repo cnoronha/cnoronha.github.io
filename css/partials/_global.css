@@ -30,7 +30,7 @@
 .button.primary-button:hover{
     background: var(--gradient-color);
     background-clip: padding-box;
-    color: red;
+    color: whitesmoke;
 }
 
 .button.primary-button::after{
@@ -44,8 +44,10 @@
 }
 
 p.para{
-    color: var(--text-color);
-    font: normal 500 16px/25px var(--roboto);
+    color: black;
+    font-size: 1.2rem;
+
+    
 }
 
 

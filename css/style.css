@@ -87,36 +87,6 @@
     transform: translateY(100px);
 }
 
-.button{
-    padding: 0.8rem 2.2rem;
-    font: normal 900 16px/20px;
-    position: relative;
-    border: 3px solid transparent;
-    border-radius: 4px;
-}
-
-.button.primary-button{
-    background: white;
-    background-clip: padding-box;
-    transition: background 0.6s ease;
-    box-shadow: var(--box-shadow);
-}
-
-.button.primary-button:hover{
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: whitesmoke;
-}
-
-.button.primary-button::after{
-    position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px; right: -2px;
-    background: var(--gradient-color);
-    content: " ";
-    z-index: -1;
-    border-radius: 4px;
-}
 
 /*  End Banner Area  */
 
@@ -143,4 +113,41 @@
     padding: 0.4rem 0;
 }
 
-/*  End Banner Area  */
+/*  End About Area  */
+
+
+/*  Start Projects Area  */
+
+.site-main .projects-area .projects-header{
+    padding: 5rem 5rem;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+.site-main .projects-area .carousel{
+    padding: 5rem 2rem;
+}
+
+.site-main .projects-area .carousel .carousel-control-prev,
+.site-main .projects-area .carousel .carousel-control-next{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.site-main .projects-area .carousel .carousel-control-prev:hover,
+.site-main .projects-area .carousel .carousel-control-next:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+}
+
+.site-main .projects-area .carousel .carousel-item>img{
+    padding: 2rem 0rem;
+    width: 50rem;   
+}
+
+
+
+/*  End Projects Area  */
