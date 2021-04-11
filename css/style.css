@@ -124,12 +124,16 @@
     text-decoration: underline;
 }
 
-.site-main .projects-area .carousel{
-    padding: 5rem 2rem;
+.site-main .projects-area .carousel .carousel-control-prev{
+    margin-left: 20rem;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
 }
 
-.site-main .projects-area .carousel .carousel-control-prev,
 .site-main .projects-area .carousel .carousel-control-next{
+    margin-right: 20rem;
     background: var(--gradient-color);
     background-clip: padding-box;
     transition: background 0.6s ease;
@@ -143,9 +147,14 @@
     color: whitesmoke;
 }
 
+.site-main .projects-area .carousel .carousel-item{
+    background-color: black;
+    height: 600px;
+}
+
 .site-main .projects-area .carousel .carousel-item>img{
-    padding: 2rem 0rem;
-    width: 50rem;   
+    position: relative;
+    width: 43rem;
 }
 
 
