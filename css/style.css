@@ -12,7 +12,7 @@
 
 /* Universal Font*/
 *{
-    font-family: helvetica;
+    font-family: Helvetica;
 }
 
 /* Start navigation */
@@ -26,18 +26,18 @@
 }
 
 .header_area .main-menu .navbar .navbar-brand{
-    font: normal 500 25px/2px var(--merriweather);
+    font: normal 500 25px/2px;
     color: whitesmoke;
 }
 
 .header_area .main-menu .navbar .navbar-nav .nav-item .nav-link{
-    font: normal 500 18px/2px var(--merriweather);
+    font: normal 500 18px/2px;
     text-transform: uppercase;
     padding: 1.7rem;
     color: whitesmoke;
 }
 
-.header_area .main-menu .navbar-nav .active a{
+.header_area .main-menu .navbar-nav .nav-item .nav-link a{
     background: var(--gradient-color-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +57,7 @@
 /*  Start Banner Area  */
 
 .site-main .site-banner .site-title h3.title-text{
-    font: var(--roboto);
+    font: var(--merriweather);
     font-size: 2.5rem;
     padding-top: 35%;
     font-weight: 500;
@@ -118,6 +118,15 @@
 
 /*  Start Projects Area  */
 
+.site-main .projects-area{
+  padding: 12rem 5rem;
+}
+
+.site-main .projects-area .projects-title h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -127,7 +136,10 @@
   margin: auto;
 }
 
-
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -201,12 +213,12 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: 1}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: 1}
   to {opacity: 1}
 }
 
