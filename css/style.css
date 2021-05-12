@@ -22,6 +22,9 @@
 }
 
 .header_area .main-menu .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
     padding: 1rem 20rem ;
 }
 
@@ -119,7 +122,7 @@
 /*  Start Projects Area  */
 
 .site-main .projects-area{
-  padding: 12rem 5rem;
+  padding: 3rem 5rem;
 }
 
 .site-main .projects-area .projects-title h1{
@@ -209,19 +212,44 @@
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 10s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 1}
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: 1}
+  from {opacity: .4}
   to {opacity: 1}
 }
 
+.sb-title h2{
+  text-align: center;
+  padding-top: 2rem;
+}
 
+.site-main .projects-area .SB-text{
+  padding-top: 2rem;
+  padding: 0 5rem;
+}
+
+.site-main .projects-area .SB-text .SB-column-left{
+  float: left;
+  width: 45%;
+}
+
+
+.site-main .projects-area .SB-text .SB-column-right{
+  float: right;
+  width: 45%;
+}
+
+.site-main .projects-area .SB-text::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*  End Projects Area  */
