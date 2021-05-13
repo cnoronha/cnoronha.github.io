@@ -25,7 +25,7 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
-    padding: 1rem 20rem ;
+    padding: 0rem 20rem ;
 }
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -125,15 +125,28 @@
   padding: 3rem 5rem;
 }
 
+.site-main .projects-area .drop-btn{
+  text-align: center;
+}
+
+
 .site-main .projects-area .solar-boat-project{
+  background: #fff;
+  overflow: hidden;
 
   transition: all .5s ease-in-out;
-  transform-origin: left top;
-  transform: scaleY(0);
+  height: 0;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
 }
 
 .site-main .projects-area .solar-boat-project:target{
-  transform: scaleY(1);
+  line-height: 1.5;
+  height: 1000px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
 }
 
 .site-main .projects-area .projects-title h1{

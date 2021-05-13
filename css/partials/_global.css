@@ -43,6 +43,38 @@
     border-radius: 4px;
 }
 
+.button2{
+    text-align: center;
+    padding: 1rem 50rem;
+    font: normal 900 16px/20px;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button2.primary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button2.primary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+}
+
+.button2.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: " ";
+    z-index: -1;
+    border-radius: 4px;
+}
+
 p.para{
     color: black;
     font-size: 1.2rem;
