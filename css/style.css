@@ -172,6 +172,7 @@
 
 .site-main .projects-area .SB-text .SB-column-left{
   float: left;
+  padding-bottom: 5rem;
   width: 45%;
 }
 
@@ -204,6 +205,12 @@
   padding-top: 1em;
   padding-bottom: 1em;
   color: black;
+}
+
+.site-main .projects-area .mySlides1 .Slide1imgs{
+  width: auto;
+  height: 400px;
+  max-height: 500px;
 }
 
 

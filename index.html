@@ -111,19 +111,21 @@
                     </h3>
                     <div class="paragraph py-4 w-75">
                         <p class="para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
-                            possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            I'm Colin! I started my journey as a mechanical engineer at the California Maritime Academy. After taking my first mechatronics course,
+                            I fell in love with learning controls and decided to continue my studies. I am currently in a mechanincal engineering master's 
+                            program at the University of Washington where I am focusing my studies in controls. I have really enjoyed learning more about 
+                            the theory behind controls and how I can apply it to my projects. 
                         </p>
                         <p class="para">
-                            It is a long established fact that a reader will be distracted by the readable content
-                            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                            here
+                            Outside of engineering, I love to be active. On most days that just means going to the gym and lifting weights or going for a run, but when I get
+                            a chance, I also like hiking in the PNW. 
                         </p>
                     </div>
+                    <!--
                     <a href="/cnoronha.github.io/Colin_Noronha_Resume.pdf" download="Colin_Noronha_Resume">
                       <button type="button" class="btn button primary-button text-uppercase">Download Resume</button>
                     </a>
+                  -->
                 </div>
             </div>
         </div>
@@ -154,20 +156,20 @@
               <!-- Full-width images with number and caption text -->
               <div class="mySlides1" id="solarboat">
                 <div class="numbertext">1 / 3</div>
-                <img src="img/test images/space1.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img class="Slide1imgs" src="img/SolarBoat/Old Solar Boat.png" style="width:100%">
+                
               </div>
             
               <div class="mySlides1" id="solarboat">
                 <div class="numbertext">2 / 3</div>
-                <img src="img/test images/space2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <img class="Slide1imgs" src="img/SolarBoat/Power_Train.png" style="width:100%">
+                
               </div>
             
               <div class="mySlides1" id="solarboat">
                 <div class="numbertext">3 / 3</div>
-                <img src="img/test images/space4.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <img class="Slide1imgs" src="img/SolarBoat/SolarBoatFull.PNG" style="width:100%">
+                
               </div>
             
               <!-- Next and previous buttons -->
@@ -186,13 +188,40 @@
             <div class="SB-text">
               <div class="SB-column-left">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem placeat 
-                  sapiente repellendus nostrum doloremque accusantium. Optio hic praesentium doloremque!
+                  For my Senior Capstone Project, I decided to build a solar boat for the Sacremento Municipal Utilites District(SMUD) Solar Regatta. 
+                  This competiton consits of three races: a sprint, a slalom, and an endurance race. I worked with a team of four to build a boat that would
+                  be able to compete with the other schools. At Cal Maritime, this was a legacy project, so my team was able to work with the seniors before us 
+                  to learn more about the competition. Specifically, my team was able to race their boat at the end of our junior year. This gave us a good sense of 
+                  how the boat stacked up to the compettion. We were able to pick out a few key flaws that kept the previous seniors in the middle of the pack.
+                </p>
+                <p>
+                  The first image above shows the old design for the boat and some of the parts we were interested in. The previous team spent their entire time researching
+                  and designing the hulls. This meant they did not have much time to design a good frame or power train. They simply used two by fours to attach the hulls and a 
+                  trolling motor. This meant that, although the hulls were very light weight and durable, the boat was slow and not very maneuvarable. 
+                </p>
+                <p>
+                  After racing the boat, we realized that the only thing we wanted to keep were the hulls. This meant that we wanted to keep the catamaran style of boat, while reducing weight and increasing 
+                  speed and maneuvarability. My team then broke up the work so that each team member could focus on one main task while helping the others with their tasks. My job was to design the power train. 
+                  When we went to the competition, we noticed that the fastest boats all used their own power trains instead of simply using trolling motors. This meant that I would need to come up with a way that 
+                  would allow the motor and propellor to work at maximum efficiencies. 
                 </p>
               </div>
               <div class="SB-column-right">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit qui illo expedita alias debitis eligendi voluptatibus accusantium quia quae rem consequatur recusandae fugiat doloremque, assumenda architecto maxime rerum suscipit cupiditate quam eius aliquid fuga? Ducimus laborum iusto magnam recusandae tempore error! Esse laboriosam recusandae numquam reiciendis id. Atque, minima totam?
+                  To start my part of the project, I needed to research some ways to reduce the rpm of the drive shaft between the motor and the propellor. With some simple research, I knew that the motor
+                  would be spinning somewhere between 2500 and 3500 rpm. I also found that most of the propellors we could buy were rated between 500 and 1500 rpm. This let me know that I would be looking for 
+                  a reduction of about 3 to 1. With that in mind, I looked into gears, belts and chains as possible ways to reduce the rpm. While looking at these three methods, there were some issues that 
+                  belts and chains had that I thought were too great to justify using them. For starters, the propellor would need to be deep enough in the water to enusure it was used effienctly. This meant
+                  that the motor would either need to be in the water, or the belt/chain would need to travel through the water. Both of these options would require some sort of housing that would create a significant 
+                  amount of drag. Instead, I decided to go with a gear system. This allowed me to place the motor in the boat, and then use bevel gears and spur gears to rotate the propellor. This would also 
+                  allow for less material to be in the water. The second image above shows a Solidworks rendering of the design. 
+                </p>
+                <p>
+                  After I came up with the inital design, I stil needed to do more work to ensure that the drive train would not fail. This meant that I needed to look into 
+                  what materials I could use and when thos materials world fail. I was mostly interested in the material for the gears and drive shafts, because I wanted to keep the drive train as 
+                  light as possible. To analyze these, I created a Matlab program to check if the gears and driveshafts would last for an hour of continuous use. This analysis required some 
+                  assumptions to be made, so I just made everything worst-case scenario. Using this Matlab program, I found that we could use plastic bevel gears, but we would need steel spur gears
+                  and steel drive shafts. The plastic spur gears I tested failed at the teeth, and the drive shafts had too much bending. 
                 </p>
               </div>
             </div>
@@ -212,19 +241,19 @@
               <div class="mySlides2" id="solarboat2">
                 <div class="numbertext">1 / 3</div>
                 <img src="img/test images/space3.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                
               </div>
 
               <div class="mySlides2" id="solarboat2">
                 <div class="numbertext">2 / 3</div>
                 <img src="img/test images/space5.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                
               </div>
 
               <div class="mySlides2" id="solarboat2">
                 <div class="numbertext">3 / 3</div>
                 <img src="img/test images/space4.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                
               </div>
 
               <!-- Next and previous buttons -->
