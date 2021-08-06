@@ -1,13 +1,13 @@
 
 /* Import fonts.css */
-@import url(./fonts.css);
+@import url(fonts.css);
 
 
 /* css variables */
-@import url(./partials/variables.css);
+@import url(partials/variables.css);
 
 /* Global */
-@import url(./partials/_global.css);
+@import url(partials/_global.css);
 
 
 /* Universal Font*/
